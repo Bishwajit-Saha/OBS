@@ -107,7 +107,7 @@ var sds = document.getElementById("dum");
 
 <div id="navigation">
     <ul>
-    <li><a href="createuser.jsp">NEW USER <li>
+    <li><a href="newuser.jsp">NEW USER <li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
@@ -130,7 +130,7 @@ var sds = document.getElementById("dum");
 	</td>
     
     <td width="1200" valign="top">
-    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>CREATE USER FORM</h1><br>
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>CREATE ACCOUNT FORM</h1><br>
     	    <table  align="center" bgcolor="white">
 		<tr>
 			
