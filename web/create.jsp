@@ -82,7 +82,7 @@ function dil(form)
 </SCRIPT>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>NIT Bank</title>
+<title>NIT - Bank</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 function ctck()
@@ -107,13 +107,13 @@ var sds = document.getElementById("dum");
 
 <div id="navigation">
     <ul>
+    <li><a href="createuser.jsp">NEW USER <li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
-    <li><a href="balance1.jsp">BALANCE</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="about.jsp">ABOUT US</a></li>
+    <li><a href="userdetails.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
@@ -130,14 +130,14 @@ var sds = document.getElementById("dum");
 	</td>
     
     <td width="1200" valign="top">
-    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>OPEN ACCOUNT FORM</h1><br>
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>CREATE USER FORM</h1><br>
     	    <table  align="center" bgcolor="white">
 		<tr>
 			
 		</tr>
 		<tr>
 			<td>
-				<form name=F1 onSubmit="return dil(this)" action="CreateServlet" >
+				<form name=F1 onSubmit="return dil(this)" action="CreateAccount" >
 				  <table cellspacing="5" cellpadding="3">	
 				
 					<tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
@@ -146,8 +146,6 @@ var sds = document.getElementById("dum");
 					<tr><td>AMOUNT:</td><td> <input type="text" name="amount"/></td></tr>
 					<!-- Gender:<br/><br/>
 					Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"/><br/><br/> -->
-					<tr><td>ADDRESS:</td><td> <input type="text" name="adderess"/></td></tr>
-					<tr><td>PHONE:</td><td> <input type="text" name="phone"/></td></tr>
 					<tr><td></td><td><input type="submit" value="Submit"/>
 					
 					<INPUT TYPE=RESET VALUE="CLEAR"></td></tr>

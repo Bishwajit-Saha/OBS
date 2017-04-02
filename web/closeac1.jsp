@@ -17,7 +17,7 @@ function dil(form)
 		}
    }
 
-   if(isNaN(document.F1.accountno.value))
+   if(!isNaN(document.F1.accountno.value))
    {
        alert("Accountno must  be  number & can't be null")
 	   document.F1.accountno.value=""
@@ -70,13 +70,13 @@ var sds = document.getElementById("dum");
 
 <div id="navigation">
     <ul>
+    <li><a href="newuser.jsp">NEW USER</a></li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
-    <li><a href="balance1.jsp">BALANCE</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="about.jsp">ABOUT US</a></li>
+    <li><a href="userdetails.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
@@ -107,9 +107,9 @@ var sds = document.getElementById("dum");
 			}
 			
 			 %></div>
-				<form name=F1 onSubmit="return dil(this)" action="closeac.jsp" >
+				<form name=F1 onSubmit="return dil(this)" action="CloseAccount" >
 				     <table cellspacing="5" cellpadding="3">
-				    <tr><td>ACCOUNT NO:</td><td> <input type="text" name="accountno"/></td></tr>
+				    <tr><td>ACCOUNT NO:</td><td> <input type="text" name="account_no"/></td></tr>
 					<tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
 					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
 					

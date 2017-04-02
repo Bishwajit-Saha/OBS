@@ -17,7 +17,7 @@ function dil(form)
 		}
    }
 
-   if(isNaN(document.F1.accountno.value))
+   if(!isNaN(document.F1.accountno.value))
    {
        alert("A/C No.  must  be  number & can't be null")
 	   document.F1.accountno.value=""
@@ -41,7 +41,7 @@ function dil(form)
 	   return false
    }
    
-    if(isNaN(document.F1.taccountno.value))
+    if(!isNaN(document.F1.taccountno.value))
    {
        alert("target account  must  be  number & can't be null")
 	   document.F1.taccountno.value=""
@@ -89,19 +89,19 @@ var sds = document.getElementById("dum");
 
 <div id="header">
 	<h1>NIT - BANK<span class="style1"></span></h1>
-    <h2>Ontime Service</h2>
+    <h2>On-time Service</h2>
     <A href="index.jsp"><IMG SRC="images/home1.gif"></IMG></A>	
 </div>
 
 <div id="navigation">
     <ul>
+    <li><a href="newuser.jsp">NEW USER</a></li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
-    <li><a href="balance1.jsp">BALANCE</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="about.jsp">ABOUT US</a></li>
+    <li><a href="userdetails.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
@@ -131,12 +131,12 @@ var sds = document.getElementById("dum");
 			}
 			
 			 %></div>
-				<form name=F1 onSubmit="return dil(this)" action="transfer.jsp" >
+				<form name=F1 onSubmit="return dil(this)" action="Transfer" >
 				    <table cellspacing="5" cellpadding="3">
-				    <tr><td>ACCOUNT NO:</td><td> <input type="text" name="accountno"/></td></tr>
+				    <tr><td>ACCOUNT NO:</td><td> <input type="text" name="account_no_src"/></td></tr>
 					<tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
 					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
-					<tr><td>TARGET ACCOUNT NO:</td><td><input type="text" name="taccountno"/></td></tr>
+					<tr><td>TARGET ACCOUNT NO:</td><td><input type="text" name="account_no_dest"/></td></tr>
 					<tr><td>AMOUNT:</td><td> <input type="text" name="amount"/></td></tr>
 					<!-- Gender:<br/><br/>
 					Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"/><br/><br/> -->

@@ -63,7 +63,7 @@ var sds = document.getElementById("dum");
 
 <div id="header">
 	<h1>NIT-BANK<span class="style1"></span></h1>
-    <h2>Ontime Service</h2>	
+    <h2>On-time Service</h2>	
     <A href="index.jsp"><IMG SRC="images/home1.gif"></IMG></A>
 </div>
 
