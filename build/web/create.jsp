@@ -7,16 +7,7 @@
 <SCRIPT LANGUAGE="JavaScript">
 function dil(form)
 {
-  for(var i=0; i<3; i++)
-   {
-        if(!isNaN(form.elements[i].value))
-		{
-		   alert("This Field must be Char's")
-		   form.elements[i].value=""	
-		   form.elements[i].focus()
-		   return false
-		}
-   } 
+  
     if(document.F1.password.value!=document.F1.repassword.value)
     {
 	   alert("Check Confirm PWD"); 
@@ -107,13 +98,13 @@ var sds = document.getElementById("dum");
 
 <div id="navigation">
     <ul>
-    <li><a href="newuser.jsp">NEW USER <li>
+    <li><a href="logout.jsp">LOGOUT</a></li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="userdetails.jsp">USER DETAILS</a></li>
+    <li><a href="userdetails1.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
@@ -140,7 +131,7 @@ var sds = document.getElementById("dum");
 				<form name=F1 onSubmit="return dil(this)" action="CreateAccount" >
 				  <table cellspacing="5" cellpadding="3">	
 				
-					<tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
+					
 					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
 					<tr><td>RE-PASSWORD:</td><td> <input type="password" name="repassword"/></td></tr>
 					<tr><td>AMOUNT:</td><td> <input type="text" name="amount"/></td></tr>

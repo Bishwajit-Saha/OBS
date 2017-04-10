@@ -25,14 +25,6 @@ function dil(form)
 	   return false
    }
 
-   if(!isNaN(document.F1.username.value))
-   {
-       alert("User Name  must  be  char's & can't be null")
-	   document.F1.username.value=""
-	   document.F1.username.focus()
-	   return false
-   }
-
    if(!isNaN(document.F1.password.value))
    {
        alert("Password  must  be  char's & can't be null")
@@ -79,13 +71,13 @@ var sds = document.getElementById("dum");
 
 <div id="navigation">
     <ul>
-    <li><a href="newuser.jsp">NEW USER</a></li>
+    <li><a href="logout.jsp">LOGOUT</a></li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="userdetails.jsp">USER DETAILS</a></li>
+    <li><a href="userdetails1.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
@@ -118,7 +110,6 @@ var sds = document.getElementById("dum");
 				<form name=F1 onSubmit="return dil(this)" action="Deposit" >
 				    <table cellspacing="5" cellpadding="3">
 				    <tr><td>ACCOUNT NO:</td><td> <input type="text" name="account_no"/></td></tr>
-					<tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
 					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
 					<tr><td>AMOUNT:</td><td> <input type="text" name="amount"/></td></tr>
 					<!-- Gender:<br/><br/>

@@ -113,7 +113,7 @@ var sds = document.getElementById("dum");
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="userdetails.jsp">USER DETAILS</a></li>
+    <li><a href="userdetails1.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
@@ -130,7 +130,7 @@ var sds = document.getElementById("dum");
 	</td>
     
     <td width="1200" valign="top">
-    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>OPEN ACCOUNT FORM</h1><br>
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>NEW USER FORM</h1><br>
     	    <table  align="center" bgcolor="white">
 		<tr>
 			

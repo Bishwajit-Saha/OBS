@@ -27,7 +27,7 @@ public class Withdraw extends HttpServlet{
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
-		String username=request.getParameter("username");
+		String username=(String)request.getSession().getAttribute("username");
 		//String fullname=request.getParameter("fullname");
 		String password=request.getParameter("password");
 		String account_no = request.getParameter("account_no");

@@ -27,7 +27,7 @@ public class Deposit extends HttpServlet{
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
-		String username=request.getParameter("username");
+		String username=(String)request.getSession().getAttribute("username");
 		//String fullname=request.getParameter("fullname");
 		String password=request.getParameter("password");
 		String account_no = request.getParameter("account_no");
@@ -100,7 +100,7 @@ public class Deposit extends HttpServlet{
 
 		if(status>0){
 
-			String res = "AMOUNT SUCCESSFULLY DEPOSITED! CURRENT BALANCE IS ";
+			String res = "AMOUNT SUCCESSFULLY DEPOSITED! CURRENT BALANCE OF ACCOUNT IS ";
 			res = res.concat(Double.toString(balance));
 			request.setAttribute("res",res);
 			

@@ -29,18 +29,33 @@ var sds = document.getElementById("dum");
     <A href="index.jsp"><IMG SRC="images/home1.gif"></IMG></A>	
 </div>
 
+<%
+    if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {
+    %>
+<div id="navigation2">
+    <ul>
+   
+    <li><a href="login.jsp">LOGIN</a></li>
+    <li><a href="newuser.jsp">NEW USER</a></li>
+    <li><a href="about.jsp">ABOUT US</a></li>
+  </ul>
+</div>
+    <%} else {
+%>
 <div id="navigation">
     <ul>
-    <li><a href="newuser.jsp">NEW USER</a></li>
+    <li><a href="logout.jsp">LOGOUT</a></li>
     <li><a href="create.jsp">NEW ACCOUNT</a></li>
     <li><a href="deposit1.jsp">DEPOSIT</a></li>
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="userdetails.jsp">USER DETAILS</a></li>
+    <li><a href="userdetails1.jsp">USER DETAILS</a></li>
     </ul>
 </div>
-
+<%
+    }
+%>
 
 
 <table style="width:897px; background:#FFFFFF; margin:0 auto;">

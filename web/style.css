@@ -131,6 +131,42 @@ color:#FFFFFF;
 border:none;
 float:left;
 }
+#navigation2
+{
+margin:0 auto;
+width:896px;
+height:40px;
+background:#000;
+border:1px solid #282828;
+}
+#navigation2 ul
+{
+list-style:none;
+}
+#navigation2 ul li
+{
+color:#adadad;
+float:left;
+text-align:center;
+font:bold 15px/40px Arial, Helvetica, sans-serif;
+width:295px;
+border-right:1px solid #282828;
+}
+#navigation2 ul li a
+{
+text-decoration:none;
+display:block;
+color:#adadad;
+}
+#navigation2 ul li a:hover
+{
+color:#FFFFFF;
+}
+#navigation2 ul li.last
+{
+border:none;
+float:left;
+}
 
 #content1
 {
