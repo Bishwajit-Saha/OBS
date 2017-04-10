@@ -33,8 +33,17 @@ var sds = document.getElementById("dum");
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
+    <%
+    if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {
+    %>
+    <li><a href="login.jsp">LOGIN</a></li>
+    <%} else {
+%>
     <li><a href="userdetails.jsp">USER DETAILS</a></li>
-    
+    <a href='logout.jsp'>Log out</a>
+<%
+    }
+%>
     </ul>
 </div>
 

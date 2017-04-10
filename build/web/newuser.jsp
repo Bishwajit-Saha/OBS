@@ -113,7 +113,7 @@ var sds = document.getElementById("dum");
     <li><a href="withdraw1.jsp">WITHDRAW</a></li>
     <li><a href="transfer1.jsp">TRANSFER</a></li>
     <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="usedetails.jsp">USER DETAILS</a></li>
+    <li><a href="userdetails.jsp">USER DETAILS</a></li>
     </ul>
 </div>
 
